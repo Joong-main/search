@@ -3,7 +3,7 @@
 
 int main(void) {
 
-	int size, * arr,target,index;
+	int size, * arr,target,index =-1;
 	printf("Type size of array: ");
 	scanf("%d", &size);
 
@@ -32,7 +32,11 @@ int main(void) {
 	};
 	printf("\n");
 
-	printf("index =%d", index);
+	if (index == -1) {
+		printf("There is no such element in the array");
+	}
+	else { printf("index = %d", index); };
+	
 
 	return 0;
 }
